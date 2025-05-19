@@ -18,7 +18,7 @@ export default function LeaderboardPage() {
 
   return (
     <div className="p-2 max-w-[600px] mx-auto">
-      <h2 className="font-bold py-3 text-2xl">Score Board</h2>
+      <h2 className="font-bold py-3 text-2xl">ScoreBoard</h2>
       <LeaderboardsList />
     </div>
   );
