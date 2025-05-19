@@ -18,4 +18,5 @@ jobs:
       - name: npm install and test
         run: |
           npm install --force
+          npx playwright install --with-deps
           npm run ci:test
