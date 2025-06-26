@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { asyncPreloadProcess } from "./states/isPreload/action";
 import CreatePage from "./pages/CreatePage";
 import Loading from "./components/Loading";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   const isPreload = useSelector((states) => states.isPreload);
@@ -35,6 +36,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/new" element={<CreatePage />} />
+          <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </main>
       <aside className="fixed z-10 bottom-0 left-0 w-full ">

@@ -20,7 +20,9 @@ export default function Header() {
           Threadsky
         </h1>
         <div className="h-full flex items-end relative">
-          <div className="w-1 h-5 absolute top-1/5 left-0 bg-white -translate-x-1/2 rotate-20 rounded-2xl"></div>
+          {pathnameToTitle[location.pathname.split("/")[1]] && (
+            <div className="w-1 h-5 absolute top-1/5 left-0 bg-white -translate-x-1/2 rotate-20 rounded-2xl"></div>
+          )}
           <p className="text-xs ml-3 text-shadow">
             {pathnameToTitle[location.pathname.split("/")[1]]}
           </p>
